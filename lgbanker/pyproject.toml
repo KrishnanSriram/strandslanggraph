@@ -1,0 +1,22 @@
+[project]
+name = "lgbanker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Krishnan", email = "krishnan.sriram@hotmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-anthropic>=1.7.6",
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.2.17",
+    "pydantic>=2.14.1",
+]
+
+[project.scripts]
+lgbanker = "lgbanker:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
